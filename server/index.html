@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FlashReview</title>
+	<link rel="stylesheet" type="text/css" href="static/main.css"/>
+	<link rel="icon" href="static/record.png"/>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="static/main.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		FlashReview
+	</div>
+	<div id="latest">
+	 Latest Reviews
+	 </div>
+	<div id="reviews"></div>
+	<div class="box">Write a Review
+		<form action="/api/submitreview" method="post">
+			<select name="media">
+				<option value="music" selected>Music</option>
+				<option value="film/television">Film/Television</option>
+				<option value="literature">Literature</option>
+			</select><br />
+			<input type="text" name="title" placeholder="Title" />
+			<input type="text" name="name" placeholder="Reviewer Name" /><br />
+			<label><input type="radio" name="stars" value="1"> 1 </label>
+			<label><input type="radio" name="stars" value="2"> 2 </label>
+			<label><input type="radio" name="stars" value="3"> 3 </label>
+			<label><input type="radio" name="stars" value="4"> 4 </label>
+			<label><input type="radio" name="stars" value="5"> 5 </label><br/>
+			<textarea name="review"></textarea>
+			<input type="submit" name="submit" value="Submit Form" />
+		</form></div>
+	</body>
+	</html>

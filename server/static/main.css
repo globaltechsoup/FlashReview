@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+body {
+	font-family: "Special Elite";
+	background-color: #ff6347;
+	margin: 0;
+}
+
+.box {
+	padding: 20px;
+	background-color: #f0e68c;
+	margin: 20px;
+	display: inline-block; 
+	border-radius: 20px;
+}
+
+.navbar {
+	text-align: center;
+	font-weight: bold;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: black;
+	color: white;
+}
+
+#latest {
+	margin: 20px;
+}
+
+#reviews {
+	margin: 20px;
+	font-style: italic;
+}
+
+.review {
+	margin: 10px;
+	font-style: normal;
+	border: 1px solid white;
+	padding: 10px;
+	background: lightyellow;
+	border-radius: 20px;
+}
+
+.review > .title {
+	font-size: 110%;
+}
+
+.review > .content {
+	color: #111;
+}
